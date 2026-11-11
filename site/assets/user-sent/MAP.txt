@@ -1,0 +1,13 @@
+1.jpg  -> about-anfield (Anfield, Liverpool)
+2.jpg  -> about-intro (John in a grey suit)
+3.jpg  -> same as Home banner (rainbow panorama), not re-uploaded
+4.jpg  -> about-anthem (national anthem)
+5.jpg  -> about-avon-travel-summer
+6.jpg  -> about-liverpool-fan
+7.jpg  -> about-avon-travel (team in front of goal)
+8.jpg  -> about-coaching-staff (Hartford Athletic)
+9.jpg  -> about-evans-arms
+10.jpg -> about-kickabout
+11.jpg -> Hartford crest 150px (replaced by 13.png)
+12.jpg -> about-golf
+13.png -> Hartford Athletic crest 700px, transparent PNG (in use)

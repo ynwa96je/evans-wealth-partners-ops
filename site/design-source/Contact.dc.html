@@ -1,0 +1,131 @@
+<!doctype html>
+<meta charset="utf-8"><style data-dc-design-system-vars>@layer{:root{--paper:#f7f5f0;--surface-raised:#ffffff;--line:#ddd7cb;--navy:#13263a;--navy-raised:#1c3550;--slate:#3e4a56;--slate-muted:#5e6873;--pitch:#1f6b4a;--pitch-soft:#e3eee7;--on-pitch:#ffffff;--brass:#b08d57;--brass-deep:#8a6a3a;--on-navy:#f7f5f0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-24:96px;--radius-sm:4px;--radius-md:8px;--radius-pill:999px;--font-serif:"Source Serif 4", Georgia, "Times New Roman", serif;--font-sans:"Source Sans 3", "Helvetica Neue", Arial, sans-serif;--text-display:600 56px/60px var(--font-serif);--text-h1:600 40px/48px var(--font-serif);--text-h2:600 30px/38px var(--font-serif);--text-h3:600 22px/30px var(--font-serif);--text-body-lg:400 19px/30px var(--font-sans);--text-body:400 17px/28px var(--font-sans);--text-small:400 15px/24px var(--font-sans);--text-eyebrow:600 13px/16px var(--font-sans);--text-label:600 16px/20px var(--font-sans);}}</style>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact | Evans Wealth Partners</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./site.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=Source+Sans+3:wght@400;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div class="site">
+<dc-import name="Header" current="contact" hint-size="100%,96px"></dc-import>
+<main class="page">
+
+<section class="section section-intro">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Contact</p>
+<h1 class="title-page">Let's start with a conversation.</h1>
+<p class="text-lead">Tell us a little about where you are. We'll reply by the next business day to set up a 30-minute intro call, by phone or video.</p>
+</div>
+
+<div class="contact">
+<form class="form-mockup" aria-describedby="mockup-note">
+<p class="mockup-label" id="mockup-note"><svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5"></path><path d="M12 8h.01"></path></svg>Design mockup. This form shows the layout only and does not send anything.</p>
+<div class="field-row">
+<div class="field">
+<label class="field-label" for="first-name">First name</label>
+<input class="field-input" id="first-name" type="text" autocomplete="given-name">
+</div>
+<div class="field">
+<label class="field-label" for="last-name">Last name</label>
+<input class="field-input" id="last-name" type="text" autocomplete="family-name">
+</div>
+</div>
+<div class="field-row">
+<div class="field">
+<label class="field-label" for="email">Email</label>
+<input class="field-input" id="email" type="email" autocomplete="email">
+</div>
+<div class="field">
+<label class="field-label" for="phone">Phone <span class="field-hint">(optional)</span></label>
+<input class="field-input" id="phone" type="tel" autocomplete="tel">
+</div>
+</div>
+<div class="field">
+<label class="field-label" for="client-type">Which best describes you?</label>
+<select class="field-input" id="client-type">
+<option>A family planning ahead</option>
+<option>A business owner</option>
+<option>Getting close to retirement</option>
+<option>Recently moved from the UK</option>
+<option>Something else</option>
+</select>
+</div>
+<fieldset class="choice-group">
+<legend class="field-label choice-legend">How should we reach you?</legend>
+<label class="choice"><input class="choice-input" type="radio" name="reach" value="email" checked="checked">Email</label>
+<label class="choice"><input class="choice-input" type="radio" name="reach" value="phone">Phone</label>
+<label class="choice"><input class="choice-input" type="radio" name="reach" value="either">Either is fine</label>
+</fieldset>
+<div class="field">
+<label class="field-label" for="message">What's on your mind?</label>
+<textarea class="field-input field-textarea" id="message" placeholder="For example: we'd like to retire in five years and aren't sure we're saving enough."></textarea>
+</div>
+<p class="form-note">Please don't include account numbers or your Social Security number.</p>
+<div class="form-actions">
+<button class="button-primary" type="button">Send message</button>
+</div>
+</form>
+
+<aside class="contact-aside">
+<img class="photo-contact" src="./assets/9eac44d2e1a39d08dd91fb6875eb64c8.jpg" alt="A river at sunset, with chairs set out on the grassy bank">
+<div class="contact-card">
+<div class="contact-item">
+<img class="photo-avatar" src="./assets/6f26e5b566a117d9a07b5c0baebef222.jpg" alt="John Evans">
+<div class="contact-item-body">
+<p class="contact-label">Who you'll talk to</p>
+<p class="text-body">John Evans, founder. He takes every first call himself.</p>
+</div>
+</div>
+<div class="contact-item">
+<span class="icon-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
+<div class="contact-item-body">
+<p class="contact-label">Email</p>
+<a class="text-body" href="mailto:john@evanswealthpartners.com">john@evanswealthpartners.com</a>
+</div>
+</div>
+<div class="contact-item">
+<span class="icon-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></span>
+<div class="contact-item-body">
+<p class="contact-label">Where we meet</p>
+<p class="text-body">Avon, the Farmington Valley, Connecticut and beyond. Most meetings are virtual, or we can meet at your home or your business.</p>
+</div>
+</div>
+</div>
+<div class="contact-card">
+<h2 class="title-card">What happens next</h2>
+<ol class="next-list">
+<li class="next-item"><span class="next-number">1</span><p class="text-body">We reply by the next business day to book a time.</p></li>
+<li class="next-item"><span class="next-number">2</span><p class="text-body">A 30-minute call about your situation and your questions.</p></li>
+<li class="next-item"><span class="next-number">3</span><p class="text-body">If we're a good fit, we send a short list of documents for a discovery meeting.</p></li>
+</ol>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+</main>
+<dc-import name="Footer" hint-size="100%,560px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Illustration of a small-business main street with a cafe, a workshop, a shop and an office building"><rect style="fill:var(--color-navy-line)" x="6" y="74" width="118" height="8"/>
+<rect style="fill:var(--color-navy-raised)" x="10" y="82" width="110" height="108"/>
+<rect style="fill:var(--color-navy)" x="26" y="92" width="18" height="18"/>
+<rect style="fill:var(--color-brass)" x="56" y="92" width="18" height="18"/>
+<rect style="fill:var(--color-navy)" x="86" y="92" width="18" height="18"/>
+<rect style="fill:var(--color-pitch)" x="18" y="118" width="94" height="14"/>
+<rect style="fill:var(--color-on-navy)" x="30" y="118" width="12" height="14"/>
+<rect style="fill:var(--color-on-navy)" x="54" y="118" width="12" height="14"/>
+<rect style="fill:var(--color-on-navy)" x="78" y="118" width="12" height="14"/>
+<rect style="fill:var(--color-brass)" x="24" y="138" width="50" height="38"/>
+<rect style="fill:var(--color-navy)" x="84" y="140" width="26" height="50"/>
+<path style="fill:var(--color-brass-deep)" d="M122 54 L188 18 L254 54 Z"/>
+<rect style="fill:var(--color-navy-line)" x="128" y="54" width="120" height="136"/>
+<circle style="fill:var(--color-brass)" cx="188" cy="74" r="10"/>
+<rect style="fill:var(--color-on-navy)" x="160" y="98" width="56" height="12"/>
+<rect style="fill:var(--color-navy)" x="146" y="120" width="84" height="70"/>
+<path style="fill:none;stroke:var(--color-navy-line);stroke-width:2" d="M146 134 H230"/>
+<path style="fill:none;stroke:var(--color-navy-line);stroke-width:2" d="M146 148 H230"/>
+<path style="fill:none;stroke:var(--color-navy-line);stroke-width:2" d="M146 162 H230"/>
+<path style="fill:none;stroke:var(--color-navy-line);stroke-width:2" d="M146 176 H230"/>
+<rect style="fill:var(--color-navy-line)" x="252" y="84" width="104" height="8"/>
+<rect style="fill:var(--color-navy-raised)" x="256" y="92" width="96" height="98"/>
+<rect style="fill:var(--color-on-navy)" x="268" y="100" width="72" height="10"/>
+<rect style="fill:var(--color-pitch)" x="262" y="114" width="54" height="8"/>
+<rect style="fill:var(--color-brass)" x="266" y="124" width="46" height="44"/>
+<rect style="fill:var(--color-navy)" x="320" y="126" width="24" height="64"/>
+<rect style="fill:var(--color-navy-line)" x="360" y="40" width="72" height="150"/>
+<rect style="fill:var(--color-brass)" x="372" y="54" width="16" height="18"/>
+<rect style="fill:var(--color-navy)" x="404" y="54" width="16" height="18"/>
+<rect style="fill:var(--color-navy)" x="372" y="82" width="16" height="18"/>
+<rect style="fill:var(--color-brass)" x="404" y="82" width="16" height="18"/>
+<rect style="fill:var(--color-brass)" x="372" y="110" width="16" height="18"/>
+<rect style="fill:var(--color-navy)" x="404" y="110" width="16" height="18"/>
+<rect style="fill:var(--color-navy)" x="372" y="138" width="16" height="18"/>
+<rect style="fill:var(--color-brass)" x="404" y="138" width="16" height="18"/>
+<rect style="fill:var(--color-navy)" x="384" y="164" width="24" height="26"/>
+<rect style="fill:var(--color-brass-deep)" x="448" y="150" width="6" height="40"/>
+<circle style="fill:var(--color-pitch)" cx="451" cy="138" r="22"/>
+<path style="fill:none;stroke:var(--color-brass);stroke-width:2" d="M0 190 H480"/></svg>

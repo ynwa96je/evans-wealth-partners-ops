@@ -1,0 +1,9 @@
+# Never commit client or prospect data, generated payloads or secrets
+client-data/
+prospects/
+*.csv
+*.xlsx
+site/build/*payload.json
+site/build/*build.json
+site/build/bundle.json
+.env

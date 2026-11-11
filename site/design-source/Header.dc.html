@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Header | Evans Wealth Partners</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./site.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=Source+Sans+3:wght@400;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div class="site">
+<header class="site-header">
+<div class="header-bar">
+<a class="logo" href="Main.dc.html">
+<span class="logo-name">Evans Wealth Partners</span>
+<span class="logo-rule"></span>
+<span class="logo-descriptor">Family wealth management</span>
+</a>
+<nav class="nav" aria-label="Main">
+<a class="{{homeClass}}" href="Main.dc.html">Home</a>
+<a class="{{aboutClass}}" href="About.dc.html">About</a>
+<a class="{{servicesClass}}" href="Services.dc.html">Services</a>
+<a class="{{resourcesClass}}" href="Resources.dc.html">Resources</a>
+<a class="{{contactClass}}" href="Contact.dc.html">Contact</a>
+</nav>
+<div class="header-actions">
+<a class="button-primary header-cta" href="Contact.dc.html">Book an intro call</a>
+<button class="menu-button" type="button" aria-expanded="{{menuExpanded}}" aria-controls="mobile-menu" onClick="{{toggleMenu}}">
+<sc-if value="{{menuClosed}}" hint-placeholder-val="{{ true }}">
+<svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+</sc-if>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+</sc-if>
+<span>{{menuLabel}}</span>
+</button>
+</div>
+</div>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+<a class="{{homeMobile}}" href="Main.dc.html">Home<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="{{aboutMobile}}" href="About.dc.html">About<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="{{servicesMobile}}" href="Services.dc.html">Services<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="{{resourcesMobile}}" href="Resources.dc.html">Resources<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<a class="{{contactMobile}}" href="Contact.dc.html">Contact<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<div class="mobile-menu-cta">
+<a class="button-primary" href="Contact.dc.html">Book an intro call</a>
+</div>
+</nav>
+</sc-if>
+</header>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"current":{"editor":"enum","options":["home","about","services","resources","contact"],"default":"home"},"menuOpen":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":90}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const current = this.props.current ?? 'home';
+    const startOpen = this.props.menuOpen === true || this.props.menuOpen === 'true';
+    const open = (this.state && typeof this.state.open === 'boolean') ? this.state.open : startOpen;
+    const desk = (key) => key === current ? 'nav-link nav-link-active' : 'nav-link';
+    const mob = (key) => key === current ? 'mobile-menu-link mobile-menu-link-active' : 'mobile-menu-link';
+    return {
+      homeClass: desk('home'),
+      aboutClass: desk('about'),
+      servicesClass: desk('services'),
+      resourcesClass: desk('resources'),
+      contactClass: desk('contact'),
+      homeMobile: mob('home'),
+      aboutMobile: mob('about'),
+      servicesMobile: mob('services'),
+      resourcesMobile: mob('resources'),
+      contactMobile: mob('contact'),
+      menuOpen: open,
+      menuClosed: !open,
+      menuExpanded: open ? 'true' : 'false',
+      menuLabel: open ? 'Close' : 'Menu',
+      toggleMenu: () => this.setState({ open: !open })
+    };
+  }
+}
+</script>
+</body>
+</html>
