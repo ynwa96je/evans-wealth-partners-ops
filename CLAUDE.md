@@ -38,6 +38,7 @@ Touchline Coaching here, and never use its connectors or website.
 - Calendly: availability and single-use booking links for intro calls.
 - OpenSEO: keyword, rank and AI-visibility research (credits are limited; ask before large batches).
 - Claude Docs: review documents for John and compliance.
+Never use `novamira-lightgoldenrodye` or `touchline-website`: those are Touchline Coaching's website.
 Not connected: LinkedIn (no connector exists, and LinkedIn's terms forbid automated messaging), email,
 a CRM. Agents draft LinkedIn and email text for John to send himself.
 
